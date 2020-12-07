@@ -17,12 +17,15 @@ div{
     background-color: #3f96ff;
     display: inline-block;
     border-radius: 25px;
+    overflow: hidden;
 }
 
 #container{
-    background-color: #1f52ff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     width: 650px;
-    height: 301px;
+    background-color: #1f52ff;
     padding: 17px 16px 16px 20px;
     margin: 8rem;
 }
@@ -37,33 +40,54 @@ div{
 }
 
 #explanation{
-    position: relative;
     background-color: #1f52ff;
     width: 171px;
     height: 269px;
     border: 2px solid #3f96ff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 8px;
 }
 
 #start{
-    position: relative;
     background-color: #3f96ff;
     width: 108px;
     height: 48px;
-    bottom: 43px;
     border-radius: 18px;
 }
 
 #image{
-    position: relative;
     border-radius: 25px;
-    bottom: 43px;
 }
 
 #numberGiven{
-    position: relative;
     width: 121px;
-    bottom: 43px;
     border-radius: 5px;
+}
+
+#gauche{
+    width: 39%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+#droite{
+    width: 59%;
+}
+
+@media screen and (max-width: 600px){
+    #explanation{
+        display: none;
+    }
+    #container{
+        margin: 0;
+        width: 100%;
+    }
+    #gauche{
+        width: 59%;
+    }
+    #droite{
+        width: 39%;
+    }
+
 }

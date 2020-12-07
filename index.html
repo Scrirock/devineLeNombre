@@ -4,36 +4,28 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/10b102adea.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
     <div id="container">
-        <img src="petit.png" alt="image plus petit ou plus grand" id="image">
-        <div id="showAllNumber">
-            <p>Nombre déjà donnez</p>
-            <p id="nbr1">nbr 1: </p>
-            <p id="nbr2">nbr 2: </p>
-            <p id="nbr3">nbr 3: </p>
-            <p id="nbr4">nbr 4: </p>
-            <p id="nbr5">nbr 5: </p>
-            <p id="nbr6">nbr 6: </p>
-            <p id="nbr7">nbr 7: </p>
-            <p id="nbr8">nbr 8: </p>
-            <p id="nbr9">nbr 9: </p>
-            <p id="nbr10">nbr 10: </p>
+        <div id="gauche">
+            <img src="petit.png" alt="image plus petit ou plus grand" id="image">
+            <button id="start">Commencer</button>
+            <input type="text" id="numberGiven" placeholder="Entrez un nombre">
         </div>
-        <div id="explanation">
-            Ceci est un mini-jeux, le but est de deviner le nombre correcte. Quand vous êtes pret cliquer sur
-            " commencer ", à ce moment un nombre secret copmpris entre 0 et 100 sera choisit. Pour gagner essayez
-            de donner des chiffre en les mettant dans " entrez un nombre ". Pour savoir quelle prochain nombre mettre,
-            regardez l'image qui vous dira si le nombre secret est plus grand ou plus petit.
+        <div id="droite">
+            <div id="showAllNumber"></div>
+            <div id="explanation">
+                Ceci est un mini-jeux, le but est de deviner le nombre correcte. Quand vous êtes pret cliquer sur
+                " commencer ", à ce moment un nombre secret copmpris entre 0 et 100 sera choisit. Pour gagner essayez
+                de donner des nombres en les mettant dans " entrez un nombre ", appuyez ensuite sur " ENTER ".
+                Pour savoir quelle prochain nombre mettre, regardez l'image qui vous dira si le nombre
+                secret est plus grand ou plus petit.
 
-            Bonne chance!
+                Bonne chance!
+            </div>
         </div>
-        <button id="start">Commencer</button>
-        <input type="text" id="numberGiven" placeholder="Entrez un nombre">
     </div>
 
     <script src="script.js"></script>
