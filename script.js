@@ -7,7 +7,6 @@ function miniJeu(e){
         if (i < 10) {
             document.getElementById("nbr" + i).innerText += " "+value.value;
             i++;
-            console.log(value.value)
             if (value.value === rng.toString()){
                 image.src = "gagne.png"
                 image.style.opacity = "1";
@@ -54,6 +53,5 @@ button.addEventListener("click", () => {
     image.style.opacity = "0";
     rng = Math.trunc(Math.random() * 100);
     i = 1
-    console.log(rng);
     value.addEventListener("keypress", miniJeu);
 });
